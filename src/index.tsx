@@ -43,9 +43,9 @@ const App = () => {
     let _getCel = _sortableRef.getCel();
     _sortableRef.addCel(_getCel);
   };
-  const childrenItem = function (childItem:any, childIndex:any, parentIndex:any ) {
+  const childrenItem = function (childItem:any, childIndex:any, parentIndex:any, className?:any ) {
     return (
-      <div style={{position: 'absolute', right: 0}}>
+      <div className={className} style={{}}>
         <button onClick={() => alert(`childItemName${childItem.name}, childIndex:${childIndex}, parentIndex:${parentIndex}`)}>!</button>
       </div>
     )
@@ -58,39 +58,39 @@ const App = () => {
     )
   }
   const _childrenData = {
-    name: "点击添加",
+    name: "Click-Modify",
     code: "",
   };
   const __dataListChildren = {
-    name: "点击添加",
+    name: "Click-Modify（Header）",
     code: "",
     list: [],
   };
   const _dataList = [
     {
-      name: "点击添加1",
+      name: "Click-Modify 1（Header）",
       code: "",
       list: [
         {
-          name: "点击添加1-1",
+          name: "Click-Modify 1-1",
           code: "",
         },
         {
-          name: "点击添加1-2",
+          name: "Click-Modify 1-2",
           code: "",
         }
       ],
     },
     {
-      name: "点击添加2",
+      name: "Click-Modify 2（Header）",
       code: "",
       list: [
         {
-          name: "点击添加2-1",
+          name: "Click-Modify 2-1",
           code: "",
         },
         {
-          name: "点击添加2-2",
+          name: "Click-Modify 2-2",
           code: "",
           disabled: true
         }
@@ -115,7 +115,7 @@ const App = () => {
     <div>
       <h1>Hello, world!</h1>
       <div style={{width: '100%', overflow: 'auto'}}>
-        <label>Tui_Sortable 组件 v3.1</label>
+        <label style={{opacity: 0.5}}>Tui_Sortable 组件 v3.1</label><label>（npm i ti-sortable-react）</label>
         <Sortable config={{
           defaultProps: {
             children: 'list',
@@ -126,8 +126,8 @@ const App = () => {
             style: {color: 'white'},
             child: {
               style: {
-                color: 'white',
-                backgroundColor: '#237ffa'
+                // color: 'white',
+                // backgroundColor: '#237ffa'
               }
             },
             removeVisible: true,

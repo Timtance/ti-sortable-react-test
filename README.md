@@ -10,6 +10,18 @@ a great React component that provides a draggable grid layout and allows you to 
 ## 中文描述
 是一个非常好的 React 组件，它提供了可拖动的网格布局，并允许你重新排列和编辑元素。这个组件易于使用，且功能强大，可以帮助你快速实现灵活性和交互性的界面设计。如果你正在开发一个需要可定制化和交互性的项目，那么 ti-sortable 组件是一个不错的选择。
 
+## Demo
+[Demo](https://github.com/Timtance/ti-sortable-react-test)
+
+![gif of the demo being used](./demo/demo2.gif)
+
+
+### install
+```
+npm install ti-sortable-react
+// or
+yarn add ti-sortable-react
+```
 
 ## TiSortable
 
