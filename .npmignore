@@ -1,0 +1,31 @@
+# Ignore development files and directories
+.editorconfig
+.eslintignore
+.eslintrc.js
+.prettierrc
+.gitignore
+.npmrc
+package-lock.json
+yarn.lock
+webpack.config.js
+tsconfig.json
+.tgz
+
+# Ignore source files and directories
+examples/
+dist/
+src/
+tests/
+
+# Ignore build output
+build/
+
+# Ignore configuration files
+config/
+.env
+.env.example
+
+# Ignore documentation files
+docs/
+README.md
+LICENSE

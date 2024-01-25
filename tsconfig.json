@@ -1,0 +1,22 @@
+{
+    "compilerOptions": {
+      "esModuleInterop": true,
+      "target": "es5",
+      "module": "commonjs",
+      "jsx": "react",
+      "moduleResolution": "node",
+      "strict": false,
+      "resolveJsonModule": true,
+      "baseUrl": "./",
+      // "strict": false, // 关闭所有严格模式相关的选项。
+      "noImplicitAny": false, // 允许函数参数类型、变量等不明确指定类型。
+      "noImplicitThis": false, // 允许 this 关键字的隐式类型为 any。
+      "strictNullChecks": false // 允许将 null 或 undefined 赋值给任何类型，而不需要进行类型检查。
+    //   "paths": {
+    //     "*": ["src/*"]
+    //   },
+    //   "typeRoots": ["./", "./node_modules/@types"]
+    },
+    "include": ["src/**/*"],
+    "exclude": ["node_modules"]
+  }
